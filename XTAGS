@@ -1,0 +1,161 @@
+Rgen/com/camobile/cantrust/R.java214
+Rattrgen/com/camobile/cantrust/R.java237
+Rcolorgen/com/camobile/cantrust/R.java280
+Rdrawablegen/com/camobile/cantrust/R.java422
+Ridgen/com/camobile/cantrust/R.java1040
+Rlayoutgen/com/camobile/cantrust/R.java2301
+Rstringgen/com/camobile/cantrust/R.java2774
+Rgen/com/facebook/android/R.java213
+Rattrgen/com/facebook/android/R.java236
+Rcolorgen/com/facebook/android/R.java279
+Rdrawablegen/com/facebook/android/R.java421
+Ridgen/com/facebook/android/R.java1039
+Rlayoutgen/com/facebook/android/R.java2300
+Rstringgen/com/facebook/android/R.java2773
+CanTrustLocationManagersrc/com/camobile/cantrust/CanTrustLocationManager.java280
+CanTrustLocationManagerCanTrustLocationManagersrc/com/camobile/cantrust/CanTrustLocationManager.java393(final LocationManager locationManager)
+CanTrustLocationManagergetLastKnownLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java853()
+CanTrustLocationManagergetLastKnownLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java1313(final String[] providers)
+CanTrustLocationManagerisUseLastKnownLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java2372()
+CanTrustLocationManagersetUseLastKnownLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java2584(final boolean useLastKnownLocation)
+CanTrustLocationManagergetSignificantlyNewersrc/com/camobile/cantrust/CanTrustLocationManager.java2819()
+CanTrustLocationManagersetSignificantlyNewersrc/com/camobile/cantrust/CanTrustLocationManager.java2889(final long significantlyNewer)
+CanTrustLocationManagergetDelaysrc/com/camobile/cantrust/CanTrustLocationManager.java3332()
+CanTrustLocationManagersetDelaysrc/com/camobile/cantrust/CanTrustLocationManager.java3527(final long delay)
+CanTrustLocationManagergetIntervalsrc/com/camobile/cantrust/CanTrustLocationManager.java3872()
+CanTrustLocationManagersetIntervalsrc/com/camobile/cantrust/CanTrustLocationManager.java4067(final long interval)
+CanTrustLocationManagergetTimeoutsrc/com/camobile/cantrust/CanTrustLocationManager.java4494()
+CanTrustLocationManagersetTimeoutsrc/com/camobile/cantrust/CanTrustLocationManager.java4680(final long timeout)
+CanTrustLocationManagergetCurrentLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java5048()
+CanTrustLocationManagerstartsrc/com/camobile/cantrust/CanTrustLocationManager.java5494()
+CanTrustLocationManagerLocationListenersrc/com/camobile/cantrust/CanTrustLocationManager.java7123()
+CanTrustLocationManageronLocationChangedsrc/com/camobile/cantrust/CanTrustLocationManager.java7194(final Location location)
+CanTrustLocationManageronProviderDisabledsrc/com/camobile/cantrust/CanTrustLocationManager.java7397(final String provider)
+CanTrustLocationManageronProviderEnabledsrc/com/camobile/cantrust/CanTrustLocationManager.java7472(final String provider)
+CanTrustLocationManageronStatusChangedsrc/com/camobile/cantrust/CanTrustLocationManager.java7546(final String provider, final int status, final Bundle extras)
+CanTrustLocationManagerLocationListenersrc/com/camobile/cantrust/CanTrustLocationManager.java7810()
+CanTrustLocationManageronLocationChangedsrc/com/camobile/cantrust/CanTrustLocationManager.java7885(final Location location)
+CanTrustLocationManageronProviderDisabledsrc/com/camobile/cantrust/CanTrustLocationManager.java8088(final String provider)
+CanTrustLocationManageronProviderEnabledsrc/com/camobile/cantrust/CanTrustLocationManager.java8163(final String provider)
+CanTrustLocationManageronStatusChangedsrc/com/camobile/cantrust/CanTrustLocationManager.java8237(final String provider, final int status, final Bundle extras)
+CanTrustLocationManagerstopsrc/com/camobile/cantrust/CanTrustLocationManager.java8563()
+CanTrustLocationManagerupdateLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java9253(final Location location, final boolean lastKnownLocation)
+CanTrustLocationManagerisBetterLocationsrc/com/camobile/cantrust/CanTrustLocationManager.java10361(final Location currentLocation, final Location newLocation)
+CanTrustLocationManagerisSameProvidersrc/com/camobile/cantrust/CanTrustLocationManager.java11544(final String provider1, final String provider2)
+Constsrc/com/camobile/cantrust/Const.java32
+DetailActivtysrc/com/camobile/cantrust/DetailActivty.java637
+DetailActivtyClickAddresssrc/com/camobile/cantrust/DetailActivty.java2842
+DetailActivtyonCreatesrc/com/camobile/cantrust/DetailActivty.java722(Bundle bundle)
+DetailActivtyset_tabelog_itemsrc/com/camobile/cantrust/DetailActivty.java1362()
+DetailActivty.ClickAddressonClicksrc/com/camobile/cantrust/DetailActivty.java2911(View widget)
+DetailActivtyOnClickListenersrc/com/camobile/cantrust/DetailActivty.java3236()
+DetailActivtyonClicksrc/com/camobile/cantrust/DetailActivty.java3331(View button)
+FriendActivitysrc/com/camobile/cantrust/FriendActivity.java944
+FriendActivityFriendsrc/com/camobile/cantrust/FriendActivity.java1150
+FriendActivity.FriendFriendsrc/com/camobile/cantrust/FriendActivity.java1237(String _id, String _name)
+FriendActivityViewHoldersrc/com/camobile/cantrust/FriendActivity.java1407
+FriendActivityLoginListenersrc/com/camobile/cantrust/FriendActivity.java2355
+FriendActivityonCreatesrc/com/camobile/cantrust/FriendActivity.java1504(Bundle bundle)
+FriendActivityonActivityResultsrc/com/camobile/cantrust/FriendActivity.java1978(int requestCode, int resultCode, Intent data)
+FriendActivityconnect_facebooksrc/com/camobile/cantrust/FriendActivity.java2201()
+FriendActivity.LoginListeneronCompletesrc/com/camobile/cantrust/FriendActivity.java2428(Bundle values)
+FriendActivity.LoginListeneronFacebookErrorsrc/com/camobile/cantrust/FriendActivity.java2651(FacebookError e)
+FriendActivity.LoginListeneronErrorsrc/com/camobile/cantrust/FriendActivity.java2894(DialogError e)
+FriendActivity.LoginListeneronCancelsrc/com/camobile/cantrust/FriendActivity.java3118()
+FriendActivityFriendsRequestListenersrc/com/camobile/cantrust/FriendActivity.java3156
+FriendActivity.FriendsRequestListeneronCompletesrc/com/camobile/cantrust/FriendActivity.java3280(String response, final Object state)
+FriendActivity.FriendsRequestListeneronFacebookErrorsrc/com/camobile/cantrust/FriendActivity.java4591(FacebookError e, final Object state)
+FriendActivity.FriendsRequestListeneronFileNotFoundExceptionsrc/com/camobile/cantrust/FriendActivity.java4860(FileNotFoundException e, final Object state)
+FriendActivity.FriendsRequestListeneronIOExceptionsrc/com/camobile/cantrust/FriendActivity.java5149(IOException e, final Object state)
+FriendActivity.FriendsRequestListeneronMalformedURLExceptionsrc/com/camobile/cantrust/FriendActivity.java5413(MalformedURLException e, final Object state)
+FriendActivityFriendListAdaptersrc/com/camobile/cantrust/FriendActivity.java5685
+FriendActivity.FriendListAdapterFriendListAdaptersrc/com/camobile/cantrust/FriendActivity.java5789(Context context)
+FriendActivity.FriendListAdaptergetCountsrc/com/camobile/cantrust/FriendActivity.java5964()
+FriendActivity.FriendListAdaptergetItemsrc/com/camobile/cantrust/FriendActivity.java6039(int position)
+FriendActivity.FriendListAdaptergetItemIdsrc/com/camobile/cantrust/FriendActivity.java6135(int position)
+FriendActivity.FriendListAdaptergetViewsrc/com/camobile/cantrust/FriendActivity.java6213(int position, View convertView, ViewGroup parent)
+GnaviParsersrc/com/camobile/cantrust/GnaviParser.java335
+GnaviParserGnaviParsersrc/com/camobile/cantrust/GnaviParser.java479(InputStream is)
+GnaviParserparsesrc/com/camobile/cantrust/GnaviParser.java588(String enc)
+GnaviParsergetTextsrc/com/camobile/cantrust/GnaviParser.java2614()
+Hubenysrc/com/camobile/cantrust/Hubeny.java32
+ImageCachesrc/com/camobile/cantrust/ImageCache.java91
+ImageCachegetsrc/com/camobile/cantrust/ImageCache.java199(String key)
+ImageCachesetsrc/com/camobile/cantrust/ImageCache.java329(String key, Bitmap image)
+ImageCacheclearsrc/com/camobile/cantrust/ImageCache.java418()
+MainActivitysrc/com/camobile/cantrust/MainActivity.java282
+MainActivityonCreatesrc/com/camobile/cantrust/MainActivity.java405(Bundle savedInstanceState)
+MainActivitycreateTabContentsrc/com/camobile/cantrust/MainActivity.java2061(String tag)
+Mapsrc/com/camobile/cantrust/Map.java770
+MapIconOverlaysrc/com/camobile/cantrust/Map.java4186
+MapMapsrc/com/camobile/cantrust/Map.java1092()
+MapMapsrc/com/camobile/cantrust/Map.java1111(double _lat, double _lng)
+MaponCreatesrc/com/camobile/cantrust/Map.java1218(Bundle savedInstanceState)
+MaponResumesrc/com/camobile/cantrust/Map.java2832()
+MaponPausesrc/com/camobile/cantrust/Map.java2913()
+MapisRouteDisplayedsrc/com/camobile/cantrust/Map.java2992()
+MaponTouchEventsrc/com/camobile/cantrust/Map.java3079(MotionEvent event)
+MapsetOverlaysrc/com/camobile/cantrust/Map.java3826(GeoPoint point)
+Map.IconOverlayonTapsrc/com/camobile/cantrust/Map.java4382(GeoPoint point, MapView mapView)
+Map.IconOverlaydrawsrc/com/camobile/cantrust/Map.java4717(Canvas canvas, MapView mapView, boolean shadow)
+Map.IconOverlayIconOverlaysrc/com/camobile/cantrust/Map.java5204(Bitmap icon, GeoPoint initial)
+Mapadd_pinsrc/com/camobile/cantrust/Map.java5430()
+MapPinItemizedOverlaysrc/com/camobile/cantrust/Map.java5601(pin)
+MaponTapsrc/com/camobile/cantrust/Map.java5681(int index)
+NeighbourhoodListActivitysrc/com/camobile/cantrust/NeighbourhoodListActivity.java1177
+NeighbourhoodListActivityViewHoldersrc/com/camobile/cantrust/NeighbourhoodListActivity.java1496
+NeighbourhoodListActivityListAdaptersrc/com/camobile/cantrust/NeighbourhoodListActivity.java7710
+NeighbourhoodListActivityonCreatesrc/com/camobile/cantrust/NeighbourhoodListActivity.java1625(Bundle bundle)
+NeighbourhoodListActivityget_locationsrc/com/camobile/cantrust/NeighbourhoodListActivity.java3387()
+NeighbourhoodListActivityLocationListenersrc/com/camobile/cantrust/NeighbourhoodListActivity.java5212()
+NeighbourhoodListActivityonLocationChangedsrc/com/camobile/cantrust/NeighbourhoodListActivity.java5277(final Location location)
+NeighbourhoodListActivityonProviderDisabledsrc/com/camobile/cantrust/NeighbourhoodListActivity.java5412(final String provider)
+NeighbourhoodListActivityonProviderEnabledsrc/com/camobile/cantrust/NeighbourhoodListActivity.java5494(final String provider)
+NeighbourhoodListActivityonStatusChangedsrc/com/camobile/cantrust/NeighbourhoodListActivity.java5575(final String provider, final int status, final Bundle extras)
+NeighbourhoodListActivitynotification_providersrc/com/camobile/cantrust/NeighbourhoodListActivity.java5775()
+NeighbourhoodListActivitystop_location_servicesrc/com/camobile/cantrust/NeighbourhoodListActivity.java6979()
+NeighbourhoodListActivityset_locationsrc/com/camobile/cantrust/NeighbourhoodListActivity.java7403(final Location location)
+NeighbourhoodListActivity.ListAdapterListAdaptersrc/com/camobile/cantrust/NeighbourhoodListActivity.java7808(Context context)
+NeighbourhoodListActivity.ListAdaptergetCountsrc/com/camobile/cantrust/NeighbourhoodListActivity.java7977()
+NeighbourhoodListActivity.ListAdaptergetItemsrc/com/camobile/cantrust/NeighbourhoodListActivity.java8052(int position)
+NeighbourhoodListActivity.ListAdaptergetItemIdsrc/com/camobile/cantrust/NeighbourhoodListActivity.java8148(int position)
+NeighbourhoodListActivity.ListAdaptergetViewsrc/com/camobile/cantrust/NeighbourhoodListActivity.java8226(int position, View convertView, ViewGroup parent)
+NeighbourhoodListActivitysearch_gnavisrc/com/camobile/cantrust/NeighbourhoodListActivity.java9324()
+NeighbourhoodListActivityset_gnavi_viewsrc/com/camobile/cantrust/NeighbourhoodListActivity.java9965(Gnavi data, ViewHolder holder)
+NeighbourhoodListActivitysearch_tabelogsrc/com/camobile/cantrust/NeighbourhoodListActivity.java10344()
+NeighbourhoodListActivityset_tabelog_viewsrc/com/camobile/cantrust/NeighbourhoodListActivity.java11015(Tabelog data, ViewHolder holder)
+PhotoActivitysrc/com/camobile/cantrust/PhotoActivity.java371
+PhotoActivityonCreatesrc/com/camobile/cantrust/PhotoActivity.java688(Bundle savedInstanceState)
+PhotoActivitysurfaceCreatedsrc/com/camobile/cantrust/PhotoActivity.java1030(SurfaceHolder holder)
+PhotoActivitysurfaceChangedsrc/com/camobile/cantrust/PhotoActivity.java1415(SurfaceHolder holder, int format, int w, int h)
+PhotoActivitysurfaceDestroyedsrc/com/camobile/cantrust/PhotoActivity.java1687(SurfaceHolder holder)
+PhotoActivityonTouchEventsrc/com/camobile/cantrust/PhotoActivity.java1826(MotionEvent event)
+PhotoActivityonPictureTakensrc/com/camobile/cantrust/PhotoActivity.java2077(byte[] b, Camera camera)
+PhotoActivitygetDatesrc/com/camobile/cantrust/PhotoActivity.java2709()
+TabelogImageParsersrc/com/camobile/cantrust/TabelogImageParser.java219
+TabelogImageParserTabelogImageParsersrc/com/camobile/cantrust/TabelogImageParser.java334(InputStream is)
+TabelogImageParserparsesrc/com/camobile/cantrust/TabelogImageParser.java406(String enc)
+TabelogImageParsergetTextsrc/com/camobile/cantrust/TabelogImageParser.java1136()
+TabelogParsersrc/com/camobile/cantrust/TabelogParser.java383
+TabelogParserTabelogParsersrc/com/camobile/cantrust/TabelogParser.java529(InputStream is)
+TabelogParserparsesrc/com/camobile/cantrust/TabelogParser.java640(String enc)
+TabelogParsergetTextsrc/com/camobile/cantrust/TabelogParser.java3526()
+TabelogParserget_shop_imagesrc/com/camobile/cantrust/TabelogParser.java3835(String rcd)
+GPSItemsrc/com/camobile/cantrust/struct/GPSItem.java69
+Gnavisrc/com/camobile/cantrust/struct/Gnavi.java40
+GnaviGnavisrc/com/camobile/cantrust/struct/Gnavi.java714()
+Tabelogsrc/com/camobile/cantrust/struct/Tabelog.java39
+TabelogTabelogsrc/com/camobile/cantrust/struct/Tabelog.java1550()
+HttpClientsrc/com/camobile/cantrust/util/HttpClient.java321
+HttpClientHttpClientsrc/com/camobile/cantrust/util/HttpClient.java369(String _url)
+HttpClientrequestsrc/com/camobile/cantrust/util/HttpClient.java433()
+Utilsrc/com/camobile/cantrust/util/Util.java130
+Utilshow_toastsrc/com/camobile/cantrust/util/Util.java150(Context context, String s)
+Utilregex_lf2spacesrc/com/camobile/cantrust/util/Util.java337(String s)
+Websrc/com/camobile/cantrust/util/Web.java704
+WebauthUsersrc/com/camobile/cantrust/util/Web.java723(HttpClient client, String domain, String path, int port, String name, String pass)
+WebgetHttpStreamsrc/com/camobile/cantrust/util/Web.java1481(String domain, String path, int port)
+WebgetHttpStreamsrc/com/camobile/cantrust/util/Web.java2222(String domain, String path)
+WebgetStreamsrc/com/camobile/cantrust/util/Web.java2575(HttpClient client, String path)
+Webgetsrc/com/camobile/cantrust/util/Web.java3322(HttpClient client, String path)
+Webpostsrc/com/camobile/cantrust/util/Web.java3791(HttpClient client, String path, Map<String, String> hash)

@@ -1,0 +1,121 @@
+﻿package com.camobile.cantrust;
+
+
+import android.util.Log;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+import android.content.Intent;
+import android.view.View;
+import android.widget.ImageButton;
+
+import com.facebook.android.DialogError;
+import com.facebook.android.Facebook;
+import com.facebook.android.Facebook.DialogListener;
+import com.facebook.android.FacebookError;
+
+
+public class MainActivity extends Activity
+{
+  Facebook m_facebook;
+  private ImageButton[] m_buttons = new ImageButton[9];
+
+  @Override
+    public void onCreate (Bundle savedInstanceState)
+    {
+      super.onCreate (savedInstanceState);
+      setContentView (R.layout.main);
+
+      //connect_facebook ();
+
+      m_buttons[0] = (ImageButton)findViewById (R.id.left_top);
+      m_buttons[1] = (ImageButton)findViewById (R.id.top);
+      m_buttons[2] = (ImageButton)findViewById (R.id.right_top);
+      m_buttons[3] = (ImageButton)findViewById (R.id.left);
+      m_buttons[4] = (ImageButton)findViewById (R.id.center);
+      m_buttons[5] = (ImageButton)findViewById (R.id.right);
+      m_buttons[6] = (ImageButton)findViewById (R.id.left_bottom);
+      m_buttons[7] = (ImageButton)findViewById (R.id.bottom);
+      m_buttons[8] = (ImageButton)findViewById (R.id.right_bottom);
+
+      /*
+      for (ImageButton ib : m_buttons)
+        ib.setOnClickListener (onClickListener);
+       */
+
+      // とりあえず3つだけクリッカブルにしておく
+      m_buttons[0].setOnClickListener (onClickListener);
+      m_buttons[1].setOnClickListener (onClickListener);
+      m_buttons[2].setOnClickListener (onClickListener);
+
+      m_buttons[0].setBackgroundResource (R.drawable.gnavi);
+      m_buttons[1].setBackgroundResource (R.drawable.tabelog);
+      m_buttons[2].setBackgroundResource (R.drawable.japan_map);
+    }
+
+  private View.OnClickListener onClickListener = new View.OnClickListener ()
+  {
+    @Override
+      public void onClick (View button)
+      {
+        try
+        {
+          Intent intent = new Intent ();
+
+          if (button == m_buttons[0])
+          {
+            intent.setClassName ("com.camobile.cantrust","com.camobile.cantrust.NeighbourhoodList");
+            intent.putExtra ("CALL_API", Const.CALL_GNAVI_API);
+          }
+          else if (button == m_buttons[1])
+          {
+            intent.setClassName ("com.camobile.cantrust","com.camobile.cantrust.NeighbourhoodList");
+            intent.putExtra ("CALL_API", Const.CALL_TABELOG_API);
+          }
+          else if (button == m_buttons[2])
+          {
+            intent.setClassName ("com.camobile.cantrust","com.camobile.cantrust.Map");
+          }
+          else
+          {
+            return;
+          }
+
+          intent.setAction (Intent.ACTION_VIEW);
+          startActivity (intent);
+        }
+        catch (Exception e)
+        {
+          Log.d ("CanTrust", "startActivity  = " + e.getMessage ());
+          e.printStackTrace ();
+        }
+
+      }
+  };
+
+  private void connect_facebook ()
+  {
+    m_facebook = new Facebook (Const.FACEBOOK_APP_ID);
+    m_facebook.authorize (this, new DialogListener () {
+      @Override
+        public void onComplete (Bundle values) {}
+
+      @Override
+        public void onFacebookError (FacebookError error) {}
+
+      @Override
+        public void onError (DialogError e) {}
+
+      @Override
+        public void onCancel () {}
+    });
+  }
+
+  @Override
+    protected void onActivityResult (int requestCode, int resultCode, Intent data)
+    {
+      super.onActivityResult (requestCode, resultCode, data);
+      m_facebook.authorizeCallback (requestCode, resultCode, data);
+    }
+}

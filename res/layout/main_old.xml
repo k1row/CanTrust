@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingRight="10px"
+  android:paddingLeft="10px">
+
+  <RelativeLayout android:id="@+id/relativeLayout1"
+    android:background="@drawable/background"
+    android:layout_height="300px"
+    android:layout_width="300px">
+
+      <ImageButton android:id="@+id/center"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_centerInParent="true"
+        android:layout_margin="20px"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/top"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_above="@+id/center"
+        android:layout_alignLeft="@+id/center"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/bottom"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_below="@+id/center"
+        android:layout_alignLeft="@+id/center"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/left"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_alignTop="@+id/center"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/left_top"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_alignTop="@+id/top"
+        android:layout_alignLeft="@+id/left"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/left_bottom"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_alignLeft="@+id/left"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/right"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_toRightOf="@+id/center"
+        android:layout_alignTop="@+id/center"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/right_top"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_alignTop="@+id/top"
+        android:layout_alignRight="@+id/right"
+        android:background="@drawable/none" />
+
+      <ImageButton android:id="@+id/right_bottom"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_alignRight="@+id/right"
+        android:background="@drawable/none" />
+
+  </RelativeLayout>
+</FrameLayout>
